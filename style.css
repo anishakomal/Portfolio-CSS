@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin:0
+}
+
+/* Header */
+header{
+    background:#007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Sections */
+section {
+
+   margin-bottom: 10px;
+}
+section h2 {
+color:#007BFF
+}
+/* Skills List */
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Contact Form Styles */
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #f1f1f1;
+    padding: 15px;
+}
