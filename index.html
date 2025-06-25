@@ -1,98 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-<!-- Header Section -->
-<header>
-    <h1>Hi, I'm Anisha</h1>
-    <nav>
-        <a href="#about">About</a>|
-        <a href="#skills">Skills</a>|
-        <a href="#projects">Projects</a>|
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
 
-<!-- About Section -->
- <section id="about">
+  <!-- Header Section -->
+  <header>
+    <div class="hero-content">
+      <h1>Hello, I’m Anisha</h1>
+      <p>Web Developer | Passionate about crafting digital experiences</p>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
     <h2>About Me</h2>
     <p>I am a Web Developer skilled in creating responsive, user-friendly websites and applications.
-        I enjoy building clean, interactive designs using modern web technologies like HTML, CSS, JavaScript,
-        and React. I am passionate about continuous learning and love turning ideas into functional
-        digital experiences.</p>
- </section>
+      I enjoy building clean, interactive designs using modern web technologies like HTML, CSS, JavaScript,
+      and React. I am passionate about continuous learning and love turning ideas into functional
+      digital experiences.</p>
+  </section>
 
- <!-- Skills Section -->
+  <!-- Skills Section -->
   <section id="skills">
     <h2>My Skills</h2>
     <ul>
-        <li>HTML and CSS</li>
-        <li>JavaScript and React</li>
-        <li>Python, JAVA</li>
-        <li>MySql</li>
+      <li>HTML and CSS</li>
+      <li>JavaScript and React</li>
+      <li>Python, JAVA</li>
+      <li>MySql</li>
     </ul>
   </section>
 
-  <!-- project -->
-<section id="projects">
+  <!-- Projects Section -->
+  <section id="projects">
     <h2>Projects</h2>
-
     <div class="project-container">
-
-        <div class="project">
-            <h3>Personal Portfolio</h3>
-            <p>Developed a basic portfolio website using HTML and CSS to showcase my skills and projects.</p>
-        </div>
-
-        <div class="project">
-            <h3>Expense Management System</h3>
-            <p>Built a user-friendly expense tracking system using Python and Streamlit to manage daily financial records efficiently.</p>
-        </div>
-
-        <div class="project">
-            <h3>Shield Insurance Dashboard</h3>
-            <p>Created an interactive Power BI dashboard to analyze insurance customer data, sales, and settlement trends, enabling self-service reporting.</p>
-        </div>
-
-        <div class="project">
-            <h3>Medical Document Processor</h3>
-            <p>Designed a document processing application to automatically extract and categorize key information from medical records using Python.</p>
-        </div>
-
-        <div class="project">
-            <h3>Steganography-based Secure Messaging</h3>
-            <p>Developed a cybersecurity project using the LSB technique to securely hide messages inside images, enhancing data confidentiality.</p>
-        </div>
-
+      <div class="project">
+        <h3>Personal Portfolio</h3>
+        <p>Developed a basic portfolio website using HTML and CSS to showcase my skills and projects.</p>
+        <a href="https://github.com/anishakomal/Portfolio-CSS" class="project-link" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Expense Management System</h3>
+        <p>Built a user-friendly expense tracking system using Python and Streamlit to manage daily financial records efficiently.</p>
+        <a href="https://github.com/anishakomal/Expense-Tracking-System" class="project-link" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>AI Virtual Assistant</h3>
+        <p>Created an AI virtual assistant with voice and NLP features to help with desktop tasks using Python.</p>
+        <a href="https://github.com/anishakomal/AiVirtualAssistant" class="project-link" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>DataTable</h3>
+        <p>Designed a document processing app that extracts and categorizes medical data using Python.</p>
+        <a href="https://github.com/anishakomal/DataTable" class="project-link" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Steganography-based Secure Messaging</h3>
+        <p>Developed a cybersecurity project using the LSB technique to securely hide messages inside images.</p>
+        <a href="https://github.com/anishakomal/Steganography" class="project-link" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Business Insights 360</h3>
+        <p>Created Power BI dashboards for sales and policy analysis using SQL and Excel data.</p>
+        <a href="https://github.com/anishakomal/Business-Insights-360" class="project-link" target="_blank">View on GitHub</a>
+      </div>
     </div>
-</section>
+  </section>
 
-
-    
-
-
-<!-- Contact section -->
- <section id="contact">
-    <h2>
-        Contact Me
-    </h2>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
     <form>
-        <input type="text" placeholder="Your Name"><br>
-        <input type="email" placeholder="Your Email"><br>
-        <textarea placeholder="Your Message"></textarea><br>
-        <button>Send</button>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Your Message" rows="5" required></textarea><br>
+
+      <div class="form-actions">
+        <button type="submit">Send</button>
+        <a href="Anisha-Resume.pdf" download class="download-btn">Download Resume</a>
+      </div>
     </form>
- </section>
-<!-- Footer Section -->
-<footer>
+  </section>
+
+  <!-- Footer -->
+  <footer>
     <p>© 2025 Anisha.</p>
-</footer>
+  </footer>
 
 </body>
 </html>

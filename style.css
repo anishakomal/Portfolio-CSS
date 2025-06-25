@@ -1,164 +1,169 @@
-/* Global Styles */
+/* Reset and Base Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Header */
+/* Header + Hero Section */
 header {
-    background: #007BFF;
-    color: #fff;
-    text-align: center;
-    padding: 30px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.9;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s ease;
+/* Navigation */
+nav ul.nav-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+nav ul.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+nav ul.nav-links li a:hover {
+  background-color: #0056b3;
 }
 
-nav a:hover {
-    color: #ffdd57;
-}
-
-/* Sections */
+/* Section Container */
 section {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-
 section h2 {
-    color: #007BFF;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 5px;
+  color: #007BFF;
+  border-bottom: 2px solid #007BFF;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
-/* Skills List */
+/* Skills */
 #skills ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-
 #skills ul li {
-    background: #007BFF;
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 20px;
-    font-size: 14px;
+  background: #007BFF;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
 }
 
-/* Contact Form Styles */
+/* Projects */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.project {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+.project:hover {
+  transform: translateY(-5px);
+}
+.project h3 {
+  color: #007BFF;
+}
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: 600;
+}
+.project-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Contact Form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
 input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 16px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-button {
-    padding: 12px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Send & Resume Button Layout */
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
 }
-
-button:hover {
-    background-color: #0056b3;
+.form-actions button,
+.form-actions .download-btn {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+.form-actions button:hover,
+.form-actions .download-btn:hover {
+  background-color: #0056b3;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    background: #f1f1f1;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 14px;
-    color: #555;
-}
-/* Contact Form Styles */
-form {
-    max-width: 600px;
-    margin: 0 auto;
+  text-align: center;
+  background: #f1f1f1;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 16px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-button {
-    padding: 12px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-
-/* Project Section with Grid */
-#projects {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-.project-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.project {
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-    margin-top: 0;
-    color: #007BFF;
-}
-
-.project p {
-    color: #555;
-    line-height: 1.4;
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  .form-actions {
+    flex-direction: column;
+  }
+  nav ul.nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
