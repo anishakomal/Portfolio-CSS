@@ -1,3 +1,8 @@
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset and Base Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,6 +20,7 @@ header {
   text-align: center;
   padding: 50px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Make menu-icon absolute inside header */
 }
 .hero-content p {
   font-size: 1.2rem;
@@ -42,6 +48,51 @@ nav ul.nav-links li a {
 }
 nav ul.nav-links li a:hover {
   background-color: #0056b3;
+}
+
+/* Hides checkbox and styles icon */
+#menu-toggle {
+  display: none;
+}
+
+/* ✅ Hamburger Icon Styles */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+  position: absolute; /* absolute inside header */
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Mobile Menu: Hidden by default */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    background-color: transparent;
+  }
+
+  nav ul.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #007BFF;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+  }
+
+  nav ul.nav-links li {
+    text-align: center;
+    border-top: 1px solid #ffffff20;
+    padding: 12px 0;
+  }
+
+  /* ✅ Show menu when checkbox is checked */
+  #menu-toggle:checked + .menu-icon + nav ul.nav-links {
+    display: flex;
+  }
 }
 
 /* Section Container */
